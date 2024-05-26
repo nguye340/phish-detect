@@ -2,9 +2,13 @@
 Phish Detect is an automated playbook coded in Python to detect phishing emails. Source code below, feel free to modify and use it for your purpose:
 
 ```python
+# Created by: Han Nguyen
+# Last Modified: March 4th, 2024
+# Purpose: Created a playbook to detect phishing email attempts based on their URL request event.
+ 
 import phantom.rules as phantom
 import json
-import requests  # Ensure requests is available in your Phantom environment
+import requests  # Note: Make sure requests is available in your Phantom environment
 
 def on_start(container):
     # Attempt to collect URL artifacts
